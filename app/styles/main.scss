@@ -1,0 +1,213 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  // padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+  margin-left: 10px;
+
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    // margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.landing-img {
+    background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-228610.jpg');
+    background-size:cover;
+    text-align: center;
+}
+
+.about-img {
+  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-144865.jpg');
+  background-size:cover;
+  text-align: center;
+}
+
+.resume-img {
+  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-167228.jpg');
+  background-size:cover;
+  text-align: center;
+}
+
+.contact-img {
+  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-166435.jpg');
+  background-size:cover;
+  text-align: center;
+}
+
+.wrapper {
+    width:100%;
+    height: 100%;
+}
+
+.textbox {
+  height: 400px;
+  margin-top: 200px;
+  //padding-top: 200px;
+}
+
+// http://stackoverflow.com/a/19601276
+.btn-circle {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 27.5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+}
+
+.resume-btn {
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+/* Container DIV - automatically generated */
+.simply-scroll-container {
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip {
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 0;
+  top: -20em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+	width: 100%;
+	height: 200px;
+}
+
+/* Explicitly set height/width of each list item */
+.simply-scroll .simply-scroll-list li {
+	float: left; /* Horizontal scroll only */
+	width: 200px;
+	height: 200px;
+  margin: 10px;
+}
