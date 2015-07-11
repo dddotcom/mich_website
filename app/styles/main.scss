@@ -29,7 +29,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 10px solid #252525;
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -55,9 +55,10 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
-  margin-left: 10px;
-
+  border-top: 10px solid #252525;
+  span {
+    margin-left: 10px;
+  }
 }
 
 .container-narrow > hr {
@@ -111,28 +112,33 @@ body {
   }
 }
 
+.img-section {
+  text-align: center;
+  background-repeat: no-repeat no-repeat;
+}
+
 .landing-img {
-    background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-228610.jpg');
-    background-size:cover;
-    text-align: center;
+    @extend .img-section;
+    background-image: url('../images/mountain.png');
+    background-position: 50% -98%;
 }
 
 .about-img {
-  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-144865.jpg');
-  background-size:cover;
-  text-align: center;
+  @extend .img-section;
+  background-image: url('../images/sky.png');
+  background-position: 50% 77%;
 }
 
 .resume-img {
-  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-167228.jpg');
-  background-size:cover;
-  text-align: center;
+  @extend .img-section;
+  background-image: url('../images/forest.png');
+  background-position: 50% 77%;
 }
 
 .contact-img {
-  background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-166435.jpg');
-  background-size:cover;
-  text-align: center;
+  @extend .img-section;
+  background-image: url('../images/planes.png');
+  background-position: 0% 51%;
 }
 
 .resume-text {
@@ -249,14 +255,8 @@ Class name automatically added to element */
   margin-top: 1em;
 }
 
-//http://stackoverflow.com/q/23341781
-// .modal.in .modal-dialog {
-  // transform: none;
-// }
-
 .resume-modal {
   width: 100%;
   position: relative;
   min-height: 500px;
-  // outline: solid 1px red;
 }
