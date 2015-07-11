@@ -21,10 +21,16 @@ $('a[href*=#]:not([href=#])').click(function() {
 var feed = new Instafeed({
     get: 'user',
     userId: 837712,
+    filter: function(image) {
+      // console.log(image.tags);
+      'use strict';
+      return image.tags.indexOf('100daysofwordart') >= 0;
+    },
     sortBy: 'most-liked',
     resolution: 'low_resolution',
     accessToken: '696631061.467ede5.4affd3bcc6f04c9583cf9cbe17c79e19',
-    template: '<li><a href="{{link}}"><img src="{{image}}" width="200" height="200"/></a></li>'
+    template: '<a href="{{link}}"><img src="{{image}}" width="200" height="200"/></a>'
+    // template: '<li><a href="{{link}}"><img src="{{image}}" width="200" height="200"/></a></li>'
 });
 feed.run();
 

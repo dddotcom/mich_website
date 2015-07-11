@@ -31,13 +31,15 @@
     <![endif]-->
     <!-- <div class="container"> -->
       <div class="header">
-        <ul class="nav nav-pills pull-right">
+        <img src="/images/mlogo.png">
+        <ul class="nav nav-pills pull-right nav-pills-offset">
           <!-- <li class="active"><a href="#">Home</a></li> -->
           <li><a href="#About">About</a></li>
           <li><a href="#Resume">Resume</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
-        <h1 class="text-muted">M.</h1>
+        <!-- <h1 class="text-muted">M.</h1> -->
+
       </div>
     <!-- </div> -->
 
@@ -47,22 +49,9 @@
           <h1 style="color: white;">Michelle Ortega</h1>
           <p style="color: white;">All good things are wild + free</p>
         </div>
-        <!-- <ul id="scroller"> -->
-        <!-- <div class="simply-scroll-container"> -->
-          <!-- <div class="simply-scroll-clip"> -->
-
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- </ul> -->
-        <!-- <div class="jumbotron">
-          <h1>Landing</h1>
-          <p class="lead">Always a pleasure scaffolding your apps.</p>
-          <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-        </div> -->
-      </div>
-      <ul id="scroller">
-        <div id="instafeed"></div>
-      </ul>
+      <!-- <ul id="scroller"> -->
+        <!-- <div id="instafeed"></div> -->
+      <!-- </ul> -->
     </div>
 
     <div class="about-img">
@@ -80,10 +69,26 @@
     <div class="resume-img">
       <div class="container">
         <h4><a name="Resume"></a></h4>
-        <div class="textbox">
+        <div class="resume-textbox">
+          <!-- <a href="mo_resume.pdf" target="_blank" class="btn btn-lg btn-success resume-btn"><i class="fa fa-paper-plane"></i> Resume</a> -->
+          <button class="btn btn-lg btn-success resume-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-paper-plane"></i> Resume</button>
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                   <object class="resume-modal" type="application/pdf" data="mo_resume.pdf"></object>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <a href="mo_resume.pdf" class="btn btn-primary" download="michelle_ortega_resume.pdf">Download</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- <h1 style="color: white;">Resume</h1> -->
           <!-- <a href="mo_resume.pdf" target="_blank" class="btn btn-lg btn-success resume-btn" download="michelle_ortega_resume.pdf"><i class="fa fa-paper-plane"></i> Resume</a> -->
-          <a href="mo_resume.pdf" target="_blank" class="btn btn-lg btn-success resume-btn"><i class="fa fa-paper-plane"></i> Resume</a>
+          <p class="resume-text">#100DaysofWordArt</p>
+          <div id="instafeed"></div>
+        </div>
         </div>
       </div>
     </div>
@@ -93,7 +98,7 @@
         <h4><a name="Contact"></a></h4>
         <div class="textbox">
           <h1 style="color: white;">Michelle Ortega</h1>
-          <p style="color: white;">201.111.1111</p>
+          <!-- <p style="color: white;">201.111.1111</p> -->
           <p><a href="mailto:michelle.ortegaa@gmail.com?subject=Hello!" style="color: white;">michelle.ortegaa@gmail.com</a></p>
           <a href="https://www.linkedin.com/in/michortega" class="btn btn-default btn-circle"><i class="fa fa-linkedin fa-3x"></i></a>
           <a href="https://instagram.com/michwoman/" class="btn btn-default btn-circle"><i class="fa fa-instagram fa-3x"></i></a>
