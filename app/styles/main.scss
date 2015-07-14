@@ -161,17 +161,41 @@ body {
   height: 600px;
 }
 
+//http://bavotasan.com/2011/circular-images-with-css3/
+.circular {
+  margin-left: auto;
+  margin-right: auto;
+	width: 280px;
+	height: 280px;
+	border-radius: 140px;
+	-webkit-border-radius: 140px;
+	-moz-border-radius: 140px;
+	background: url(../images/headshot.png) no-repeat;
+  background-position: 0% 12%;
+  background-size: 103%;
+  // text-align: center;
+	}
+
 // http://stackoverflow.com/a/19601276
 .btn-circle {
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
   text-align: center;
   padding: 8px 0;
   font-size: 12px;
   line-height: 1.42;
-  border-radius: 27.5px;
+  border-radius: 20px;
   margin-left: 2.5px;
   margin-right: 2.5px;
+  background-color: white;
+}
+
+.btn-circle .icon-color {
+  color: gray;
+}
+
+.btn-circle:hover .icon-color {
+  color: black;
 }
 
 .resume-btn {
