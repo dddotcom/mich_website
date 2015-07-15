@@ -64,3 +64,23 @@ feed.run();
         animationHover(this, 'tada');
     });
 });
+
+function changeFontClick(element, style){
+   'use strict';
+    $(element).removeClass('times trebuchetms tahoma lucida courier verdana');
+    $(element).addClass(style);
+}
+
+$(document).ready(function(){
+  'use strict';
+  $('a[ff]').click(
+    function(){
+      $('a[ff]').removeClass('font-selected');
+      var style = $(this).attr('ff');
+      $(this).addClass('font-selected');
+      $('p, :header').each(function() {
+        // console.log('style = ' + style);
+        changeFontClick(this, style);
+      });
+    });
+});
