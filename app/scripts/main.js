@@ -41,3 +41,26 @@ feed.run();
     		$('#scroller').simplyScroll();
 	});
  })(jQuery);
+
+//http://www.telegraphicsinc.com/2013/07/how-to-use-animate-css/
+ function animationHover(element, animation){
+    'use strict';
+     element = $(element);
+     element.hover(
+         function() {
+             element.addClass('animated ' + animation);
+         },
+         function(){
+             //wait for animation to finish before removing classes
+             window.setTimeout( function(){
+                 element.removeClass('animated ' + animation);
+             }, 500);
+         });
+ }
+
+ $(document).ready(function(){
+   'use strict';
+    $('#for-hire').each(function() {
+        animationHover(this, 'tada');
+    });
+});

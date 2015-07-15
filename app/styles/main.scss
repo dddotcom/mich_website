@@ -1,10 +1,25 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$use-fadeIn: true;
+$use-tada: true;
 
 // bower:scss
 @import "bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "animate-sass/_animate.scss";
 // endbower
 
 @import "font-awesome/scss/font-awesome.scss";
+
+body {
+    -webkit-backface-visibility: hidden; // Addresses a small issue in webkit: http://bit.ly/NEdoDq
+}
+.animated {
+    @include animate-prefixer(animation-duration, $base-duration);
+    @include animate-prefixer(animation-fill-mode, both);
+
+    &.hinge {
+        @include animate-prefixer(animation-duration, $base-duration * 2);
+    }
+}
 
 .browsehappy {
   margin: 0.2em 0;
@@ -24,6 +39,10 @@ body {
 .marketing,
 .footer {
   padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer .pull-right {
   padding-right: 15px;
 }
 
@@ -141,9 +160,25 @@ body {
   background-position: 0% 51%;
 }
 
-.resume-text {
-  padding-top:100px;
+.wordplay-header {
+  padding-top:128px;
   padding-bottom:10px;
+}
+
+.wordplay-link {
+  color: #4DDB94;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.wordplay-link:hover {
+  color: #369968;
+}
+
+.wordplay-tag {
+  padding-bottom:10px;
+  font-size:130%;
+  color: white;
 }
 
 .wrapper {
@@ -161,8 +196,17 @@ body {
   height: 600px;
 }
 
+.about-textbox{
+  height: 575px;
+}
+
+.contact-textbox {
+  height: 600px;
+}
+
 //http://bavotasan.com/2011/circular-images-with-css3/
 .circular {
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
 	width: 280px;
@@ -173,7 +217,9 @@ body {
 	background: url(../images/headshot.png) no-repeat;
   background-position: 0% 12%;
   background-size: 103%;
-  // text-align: center;
+	// box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	// -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	// -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 
 // http://stackoverflow.com/a/19601276
@@ -199,7 +245,7 @@ body {
 }
 
 .resume-btn {
-  margin-top: 100px;
+  margin-top: 145px;
   // margin-bottom:30px;
 }
 
@@ -283,4 +329,58 @@ Class name automatically added to element */
   width: 100%;
   position: relative;
   min-height: 500px;
+}
+
+.text {
+  color: white;
+}
+
+//https://css-tricks.com/text-blocks-over-image/
+.about-div {
+  border-radius: 20px;
+  background: rgb(0, 0, 0); /* fallback color */
+  // background: rgba(0, 0, 0, 0.2);
+  background: rgba(95, 98, 110, 0.3);
+}
+
+.about-header {
+  color: white;
+  // color: #FFFF99;
+  // font-weight: bold;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-blurb {
+  font-size: 130%;
+  color: white;
+  // color: #FFFF99;
+  // font-weight: bold;
+
+}
+
+.email-text {
+  color: #194B7D;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.email-text:hover {
+  color: #123458;
+}
+
+.divider-line {
+  border-width: 3px 0;
+}
+
+.label-as-badge {
+  border-radius: 1em;
+  font-size: 20px;
+  margin-bottom: 10px;
+  background-color: #33CC33;
+}
+
+.label-as-badge:hover .animated .tada{
+
 }
