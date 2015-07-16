@@ -29,7 +29,7 @@ var feed = new Instafeed({
     sortBy: 'most-liked',
     resolution: 'low_resolution',
     accessToken: '696631061.467ede5.4affd3bcc6f04c9583cf9cbe17c79e19',
-    template: '<a href="{{link}}"><img src="{{image}}" width="200" height="200"/></a>'
+    template: '<a href="{{link}}"><img src="{{image}}" class="insta-pics img-responsive img-rounded"/></a>'
     // template: '<li><a href="{{link}}"><img src="{{image}}" width="200" height="200"/></a></li>'
 });
 feed.run();

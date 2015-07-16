@@ -129,6 +129,11 @@ body {
   .resume-modal {
     min-height: 250px;
   }
+
+  .insta-pics {
+    min-height: 200px;
+    min-width: 200px;
+  }
 }
 
 .img-section {
@@ -152,6 +157,7 @@ body {
   @extend .img-section;
   background-image: url('../images/forest.png');
   background-position: 50% 77%;
+  text-align: inherit;
 }
 
 .contact-img {
@@ -168,7 +174,7 @@ body {
 .wordplay-link {
   color: #4DDB94;
   text-decoration: underline;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 .wordplay-link:hover {
@@ -353,11 +359,9 @@ Class name automatically added to element */
 }
 
 .about-blurb {
-  font-size: 130%;
-  color: white;
+  font-size: 1.5em;
   // color: #FFFF99;
   // font-weight: bold;
-
 }
 
 .email-text {
@@ -374,16 +378,17 @@ Class name automatically added to element */
   border-width: 3px 0;
 }
 
-.label-as-badge {
+.badge-style {
   border-radius: 1em;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
-  background-color: #33CC33;
+  background-color: #FF3300;
 }
 
-.label-as-badge:hover .animated .tada{
+.badge-style:hover .animated .tada{
 }
 
+//http://www.w3schools.com/cssref/css_websafe_fonts.asp
 .times {
   font-family: "Times New Roman", Times, serif;
 }
@@ -411,4 +416,11 @@ Class name automatically added to element */
 
 .font-selected {
   background: #DADADA;
+}
+
+.insta-pics {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  padding-top: 10px;
 }
