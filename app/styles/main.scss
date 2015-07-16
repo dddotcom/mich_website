@@ -102,6 +102,13 @@ body {
   }
 }
 
+.insta-pics {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  padding-top: 10px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
@@ -192,12 +199,15 @@ body {
     height: 100%;
 }
 
-.textbox {
-  height: 400px;
-  margin-top: 200px;
+.landing-textbox {
+  height: 560px;
+  // margin-top: 200px;
   //padding-top: 200px;
 }
 
+.landing-header {
+  padding-top: 200px;
+}
 .resume-textbox{
   height: 600px;
 }
@@ -359,7 +369,7 @@ Class name automatically added to element */
 }
 
 .about-blurb {
-  font-size: 1.5em;
+  font-size: 1.3em;
   // color: #FFFF99;
   // font-weight: bold;
 }
@@ -418,9 +428,52 @@ Class name automatically added to element */
   background: #DADADA;
 }
 
-.insta-pics {
-  width: 100px;
-  height: 100px;
-  display: inline;
-  padding-top: 10px;
+@media screen and (max-width: 435px) and (min-width:0px){
+    .about-blurb {
+      font-size: 1em;
+    }
+
+    .contact-img {
+      background-position: 26% 59%;
+    }
+}
+
+@media screen and (max-width: 363px) and (min-width:0px){
+  .landing-img {
+      background-position: 50% -73%;
+    }
+}
+
+@media screen and (max-width: 421px) and (min-width:380px){
+  .nav-pills-offset {
+    margin-top: -0.1em;
+  }
+
+  .header {
+    img {
+      margin: 0px;
+      width: 20px;
+      height: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      // display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 380px) and (min-width:0px){
+  .nav-pills-offset {
+    margin-top: -2.8em;
+  }
+
+  .header {
+    img {
+      margin: 0px;
+      width: 20px;
+      height: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      // display: none;
+    }
+  }
 }
