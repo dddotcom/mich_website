@@ -152,23 +152,32 @@ body {
 .landing-img {
     @extend .img-section;
     // background-image: url('../images/mountain.png');
-    background-image: url('../images/palm_trees.png');
-    // background-size: auto;
-    background-size: 1330px 998px;
+    // background-position: 50% -98%;
+
+    // background-size: 1330px 998px;
     // background-position: 61% 259%;
-    background-position: 52% -44%;
+
+    background-image: url('../images/palm_trees.png');
+    background-position: 54% -43%;
+    // background-size: auto 600px;
+
+
 }
 
 .about-img {
   @extend .img-section;
-  background-image: url('../images/santa_monica.png'), url('../images/nyc.png');
-  // background-size: 800px 600px, 800px 600px;
-  background-size: 655px 499px, 655px 499px;
-  // background-position: -50% 0%, 150% 0%;
-  background-position: 15% 45%, 85% 45%;
+  background-image: url('../images/nyc.png'), url('../images/beach.png');
+  background-position: -1614% 94%, 0% 71%;
+  // background-position: -1611% 71%, 500% 103%;
+  // background-position: 500% 77%;
+  // background-size: 680px 499px, 680px 499px;
+  // background-position: 15% 45%, 85% 45%;
+
   // background-image: url('../images/city-merge.png');
-  // background-size: 655px 499px;
   // background-position: 52% 0%;
+
+  // background-size: 655px 499px;
+
   // background-image: url('../images/sky.png');
   // background-position: 50% 77%;
 
@@ -188,13 +197,13 @@ body {
   // background-position: 0% 51%;
   background-image: url('../images/concert.png');
   // background-size: 665px 499px;
-  background-size: 1330px 998px;
-  background-position: 50% 73%;
+  // background-size: 1330px 998px;
+  background-position: 50% 81%;
 }
 
 .wordplay-header {
-  padding-top:128px;
-  padding-bottom:10px;
+  padding-top: 30px;
+  // padding-bottom:10px;
 }
 
 .wordplay-link {
@@ -228,7 +237,7 @@ body {
   padding-top: 200px;
 }
 .resume-textbox{
-  height: 600px;
+  height: 1350px;
 }
 
 .about-textbox{
@@ -261,7 +270,7 @@ body {
 .btn-circle {
   width: 40px;
   height: 40px;
-  text-align: center;
+  // text-align: center;
   padding: 8px 0;
   font-size: 12px;
   line-height: 1.42;
@@ -269,10 +278,16 @@ body {
   margin-left: 2.5px;
   margin-right: 2.5px;
   background-color: white;
+  border: 2px solid gray;
+}
+
+.btn-circle:hover {
+  border: 2px solid black;
 }
 
 .btn-circle .icon-color {
   color: gray;
+  margin-top: -2px;
 }
 
 .btn-circle:hover .icon-color {
@@ -497,4 +512,13 @@ Class name automatically added to element */
       // display: none;
     }
   }
+}
+
+.project-desc {
+  padding-top: 51px;
+}
+
+.pfizer-logo {
+  width: 200px;
+  height: auto;
 }
