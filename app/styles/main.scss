@@ -141,6 +141,11 @@ body {
     min-height: 200px;
     min-width: 200px;
   }
+
+  .resume-images {
+    width: 200px;
+    height: auto;
+  }
 }
 
 .img-section {
@@ -158,7 +163,7 @@ body {
     // background-position: 61% 259%;
 
     background-image: url('../images/palm_trees.png');
-    background-position: 54% -43%;
+    background-position: 50% -73%;
     // background-size: auto 600px;
 
 
@@ -237,7 +242,7 @@ body {
   padding-top: 200px;
 }
 .resume-textbox{
-  height: 1350px;
+  height: 750px;
 }
 
 .about-textbox{
@@ -512,13 +517,23 @@ Class name automatically added to element */
       // display: none;
     }
   }
+
+  .resume-textbox{
+    height: 1050px;
+  }
 }
 
 .project-desc {
-  padding-top: 51px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pfizer-logo {
   width: 200px;
+  height: auto;
+}
+
+.resume-images {
+  width: 100px;
   height: auto;
 }
