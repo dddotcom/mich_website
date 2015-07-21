@@ -300,7 +300,7 @@ body {
 }
 
 .resume-btn {
-  margin-top: 200px;
+  margin-top: 20px;
   // margin-bottom:30px;
 }
 
@@ -485,9 +485,6 @@ Class name automatically added to element */
 }
 
 @media screen and (max-width: 363px) and (min-width:0px){
-  .landing-img {
-      background-position: 50% -73%;
-    }
 }
 
 @media screen and (max-width: 421px) and (min-width:380px){
@@ -524,11 +521,26 @@ Class name automatically added to element */
   }
 
   .resume-textbox{
-    height: 1050px;
+    height: 1250px;
+  }
+
+  .landing-img {
+    background-position: 48% -52%;
   }
 
   .about-img {
     background-position: -14% 94%, 23% 71%;
+  }
+
+  .email-text {
+    color: #8BAFC2;
+    border-radius: 20px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .email-text:hover {
+    color: #617A88;
   }
 }
 
@@ -549,6 +561,7 @@ Class name automatically added to element */
 
 .contact-header {
   @extend .tahoma;
+  padding-top: 250px;
   color: white;
   text-shadow:
     -1.5px -1.5px 0 gray,
