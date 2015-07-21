@@ -469,6 +469,11 @@ Class name automatically added to element */
   background: #DADADA;
 }
 
+@media screen and (max-width: 784px) and (min-width:380px){
+  .about-img {
+    background-position: -45% 94%, 37% 71%;
+  }
+}
 @media screen and (max-width: 435px) and (min-width:0px){
     .about-blurb {
       font-size: 1em;
@@ -521,6 +526,10 @@ Class name automatically added to element */
   .resume-textbox{
     height: 1050px;
   }
+
+  .about-img {
+    background-position: -14% 94%, 23% 71%;
+  }
 }
 
 .project-desc {
@@ -536,4 +545,14 @@ Class name automatically added to element */
 .resume-images {
   width: 100px;
   height: auto;
+}
+
+.contact-header {
+  @extend .tahoma;
+  color: white;
+  text-shadow:
+    -1.5px -1.5px 0 gray,
+    1.5px -1.5px 0 gray,
+    -1.5px 1.5px 0 gray,
+    1.5px 1.5px 0 gray;
 }
